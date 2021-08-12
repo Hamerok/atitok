@@ -1,11 +1,12 @@
 <center>
 <h1>Nem tudod</h1>
 <input type="textarea">
-<input type="button" onclick="check()" value="Kattints ide">
+<input type="button" id="gomb" value="Kattints ide">
   
   <script>
-  
+  document.getElementById("gomb").onclick = check();
     function check(){
+      
       if(document.querySelector('input')==="kutyujó"){
         window.location.href = "http://www.hamerok.github.io/atitok/sziadoro.html";
       }
