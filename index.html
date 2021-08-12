@@ -1,15 +1,18 @@
 <center>
-<h1>Nem tudod</h1>
+<h1 id="cim">Nem tudod</h1>
 
 <input type="textarea" id="szoveg">
-<input type="button"onclick="check();" value="Kattints ide">
+<input type="button"onclick="check();" value="Kattints ide" id="gomb">
   
   <script>
 
     function check(){
       
       if(document.getElementById('szoveg').value=="kutyujó"){
-        window.location.href = "http://www.hamerok.github.io/atitok/sziadoro.html";
+        document.getElementById("cim").innerHTML = "Ügyes vagy de nem ezt kérdeztem tőled!";
+        document.body.style.backgroundColor = "#1b1d24";
+        element.remove(document.getElementById("szoveg");
+        element.remove(document.getElementById("gomb");
       } else alert("nem nem");
     }
    
